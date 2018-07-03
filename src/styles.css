@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+.fail{
+color: red;
+}
+.topper{
+    color:green;
+}
+.subheading{
+    font-weight: bold;
+    font-style: italic;
+}
+.heading{
+    font-weight: bold;
+}
+.btn{
+    margin-top:20px;
+}
+td, th{
+    padding:10px !important;
+}
+.mt50{
+    margin-top:50px;
+}

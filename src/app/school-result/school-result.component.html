@@ -1,0 +1,22 @@
+<table *ngIf= "students">
+    <thead>
+    <tr  class="heading">
+      <th colspan ="4">Student Results Board</th>
+    </tr></thead>
+    <thead>
+    <tr  class="subheading">
+      <td>Student Name</td>
+      <td>Roll Number</td>
+      <td> Total Marks</td>
+      <td>Status</td>
+    </tr>
+    <tr *ngFor = "let student of students" [ngClass]="(student.result=='fail')?'fail':(student.result=='topper')?'topper': ''">
+      <td> {{student.student.name}} </td>
+      <td> {{student.student.rollNumber}} </td>
+     <td>
+       {{student.total}}
+     </td>
+      <td> {{student.result}} </td>
+    </tr>
+    </thead>
+</table>
